@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: yf57t889a-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: yf57t889a-java-quarkus 
+  name: yf57t889a-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: yf57t889a-java-quarkus 
